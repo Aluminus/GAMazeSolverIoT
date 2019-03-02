@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Matthew\Documents\Visual Studio 2015\Projects\GAMazeSolverIoT\x64\Release\GAMazeSolverIoT\GAMazeSolverIoT_1.0.1.0_x64.appx
+SymbolPackage=C:\Users\Matthew\Documents\Visual Studio 2015\Projects\GAMazeSolverIoT\AppPackages\GAMazeSolverIoT\GAMazeSolverIoT_1.0.1.0_Test\GAMazeSolverIoT_1.0.1.0_x64.appxsym

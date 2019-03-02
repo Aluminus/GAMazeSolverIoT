@@ -6,6 +6,9 @@
 //------------------------------------------------------------------------------
 #include "pch.h"
 
+#pragma warning(push)
+#pragma warning(disable: 4100) // unreferenced formal parameter
+
 #if defined _DEBUG && !defined DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT
 extern "C" __declspec(dllimport) int __stdcall IsDebuggerPresent();
 #endif
@@ -27,78 +30,78 @@ void ::GAMazeSolver::MainPage::Connect(int __connectionId, ::Platform::Object^ _
 {
     switch (__connectionId)
     {
-        case 1:
-            {
-                this->MazeSource = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
-            }
-            break;
-        case 2:
-            {
-                this->MazeBrowse = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Grid^>(this->MazeBrowse))->PointerWheelChanged += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::GAMazeSolver::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&MainPage::MazeBrowse_PointerWheelChanged);
-            }
-            break;
-        case 3:
-            {
-                this->btnStep = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnStep))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnStep_Click);
-            }
-            break;
-        case 4:
-            {
-                this->btnPrev = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnPrev))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnPrev_Click);
-            }
-            break;
-        case 5:
-            {
-                this->btnNext = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnNext))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnNext_Click);
-            }
-            break;
-        case 6:
-            {
-                this->txtSolverCursor = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
-            }
-            break;
-        case 7:
-            {
-                this->txtEpoch = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
-            }
-            break;
-        case 8:
-            {
-                this->txtSteps = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
-            }
-            break;
-        case 9:
-            {
-                this->btnRun = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnRun))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnRun_Click);
-            }
-            break;
-        case 10:
-            {
-                this->btnStop = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnStop))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnStop_Click);
-            }
-            break;
-        case 11:
-            {
-                this->chkSolved = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
-            }
-            break;
-        case 12:
-            {
-                this->textBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
-            }
-            break;
+    case 2:
+        {
+            this->MazeSource = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
+        }
+        break;
+    case 3:
+        {
+            this->MazeBrowse = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Grid^>(this->MazeBrowse))->PointerWheelChanged += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::GAMazeSolver::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&MainPage::MazeBrowse_PointerWheelChanged);
+        }
+        break;
+    case 4:
+        {
+            this->btnStep = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnStep))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnStep_Click);
+        }
+        break;
+    case 5:
+        {
+            this->btnPrev = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnPrev))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnPrev_Click);
+        }
+        break;
+    case 6:
+        {
+            this->btnNext = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnNext))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnNext_Click);
+        }
+        break;
+    case 7:
+        {
+            this->txtSolverCursor = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+        }
+        break;
+    case 8:
+        {
+            this->txtEpoch = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+        }
+        break;
+    case 9:
+        {
+            this->txtSteps = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+        }
+        break;
+    case 10:
+        {
+            this->btnRun = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnRun))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnRun_Click);
+        }
+        break;
+    case 11:
+        {
+            this->btnStop = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnStop))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GAMazeSolver::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::btnStop_Click);
+        }
+        break;
+    case 12:
+        {
+            this->chkSolved = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
+        }
+        break;
+    case 13:
+        {
+            this->textBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+        }
+        break;
     }
     _contentLoaded = true;
 }
@@ -109,5 +112,7 @@ void ::GAMazeSolver::MainPage::Connect(int __connectionId, ::Platform::Object^ _
     __target;               // unreferenced
     return nullptr;
 }
+
+#pragma warning(pop)
 
 

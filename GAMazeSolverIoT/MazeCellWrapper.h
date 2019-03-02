@@ -1,4 +1,4 @@
-#include "MazeCell.h"
+#include "..\GASolver\MazeCell.h"
 
 // A managed wrapper class for a MazeCell
 ref class MazeCellWrapper : public Object

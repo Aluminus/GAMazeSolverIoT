@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "GARunner.h"
+#include "..\GASolver\GARunner.h"
 #include "MainPage.g.h"
 #include <ppl.h>
 using namespace Platform;
